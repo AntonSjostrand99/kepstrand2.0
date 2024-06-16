@@ -38,7 +38,7 @@ const Footer = () => {
                 <a href="#" className="instagram text-blue-500">
                   <Image
                     className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                    layout="responsive"
+                
                     width={10}
                     height={14}
                     src="/instagram.png"
@@ -50,7 +50,7 @@ const Footer = () => {
                 <a href="#" className="tiktok text-blue-500 hover:text-blue-600">
                   <Image
                     className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                    layout="responsive"
+                 
                     width={10}
                     height={14}
                     src="/tik-tok.png"
@@ -62,7 +62,7 @@ const Footer = () => {
                 <a href="#" className="facebook text-blue-500 hover:text-blue-600">
                   <Image
                     className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                    layout="responsive"
+                 
                     width={10}
                     height={14}
                     src="/facebook.png"
@@ -74,7 +74,7 @@ const Footer = () => {
                 <a href="#" className="youtube text-blue-500 hover:text-blue-600">
                   <Image
                     className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                    layout="responsive"
+                
                     width={10}
                     height={14}
                     src="/youtube.png"

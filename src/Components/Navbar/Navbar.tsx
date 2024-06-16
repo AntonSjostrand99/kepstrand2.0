@@ -41,7 +41,6 @@ const Navbar = () => {
         <div className="flex lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
           <Link href={'/'}>
             <Image
-              className=""
               width={130}
               height={70}
               src="/LOGGA.png"
