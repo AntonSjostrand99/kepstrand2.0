@@ -88,7 +88,7 @@ const Shop = () => {
 
   return (
     <div className='flex-col justify-center items-center'>
-      <Navbar/>
+
       <div className="container mx-auto px-4 py-8">
         <div className='flex flex-col justify-center items-center'>
           <h1 className='text-4xl font-bold'>Keps</h1>
@@ -122,7 +122,7 @@ const Shop = () => {
           ))}
         </div>
       </div>
-      <Footer/>
+    
     </div>
   );
 }
