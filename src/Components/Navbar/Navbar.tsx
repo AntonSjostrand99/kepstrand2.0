@@ -43,7 +43,7 @@ const Navbar = () => {
             <Image
               width={130}
               height={70}
-              src="/LOGGA.png"
+              src="/Kepstrand-logga.png"
               alt="logga"
             />
           </Link>
