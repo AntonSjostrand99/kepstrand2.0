@@ -18,23 +18,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 sm:p-6 md:p-5 lg:p-10 p-4 sticky top-0 z-50">
+    <nav className="bg-custom-black border-b-8 border-custom-yellow sm:p-6 md:p-5 lg:p-10 p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Länkar - dolda på mindre skärmar */}
         <div className="hidden lg:flex items-center space-x-4">
-        
-        <div className="relative group">
+
+          <div className="relative group">
             <Link href="/shop" className="text-white hover:text-gray-300 flex items-center" title="Produkter">
               <InventoryIcon />
             </Link>
-            <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Link href="/shop" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Snapbacks</Link>
-              <Link href="/shop" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Beanies</Link>
-              <Link href="/shop" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Trucker Hats</Link>
+            <div className="absolute left-0 mt-2 w-56 bg-white border-4 border-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <Link href="/shop" className="block px-4 py-2 text-gray-800 hover:bg-yellow-500">Snapbacks</Link>
+              <Link href="/shop" className="block px-4 py-2 text-gray-800 hover:bg-yellow-500">Beanies</Link>
+              <Link href="/shop" className="block px-4 py-2 text-gray-800 hover:bg-yellow-500">Trucker Hats</Link>
             </div>
           </div>
-          <Link href={'/contact'} className="text-white hover:text-gray-300" title="Kontakt"><ContactPageIcon/></Link>
-        
+          <Link href={'/contact'} className="text-white hover:text-gray-300" title="Kontakt"><ContactPageIcon /></Link>
+
         </div>
 
         {/* Logga - placerad till vänster på mindre skärmar och centrerad på större skärmar */}
@@ -51,19 +51,19 @@ const Navbar = () => {
 
         {/* Kassa och inloggning - alltid till höger på större skärmar */}
         <div className="hidden lg:flex items-center space-x-4">
-        
-          <SearchComponent/>
-          <Cart/>
-          <Link href={'/login'} className="text-white hover:text-gray-300" title="Mina sidor"><SentimentSatisfiedAltIcon/></Link>
-       
+
+          <SearchComponent />
+          <Cart />
+          <Link href={'/login'} className="text-white hover:text-gray-300" title="Mina sidor"><SentimentSatisfiedAltIcon /></Link>
+
         </div>
 
         {/* Hamburgermeny och Kassa/Inloggning - endast synlig på mindre skärmar */}
         <div className="flex lg:hidden items-center space-x-4">
-        <SearchComponent/>
-        <Cart/>
-          <Link href={'/login'} className="text-white hover:text-gray-300" title="Mina sidor"><SentimentSatisfiedAltIcon/></Link>
-        
+          <SearchComponent />
+          <Cart />
+          <Link href={'/login'} className="text-white hover:text-gray-300" title="Mina sidor"><SentimentSatisfiedAltIcon /></Link>
+
           <button
             className="text-white focus:outline-none"
             onClick={toggleMenu}

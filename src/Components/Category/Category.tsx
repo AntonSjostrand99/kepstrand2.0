@@ -11,7 +11,7 @@ const categories = [
 function Category() {
   return (
     <div className="container mx-auto py-8">
-      <h2 className="text-2xl text-center mb-8 text-black font-bold py-3 px-6 rounded-lg border-4 border-black shadow-md ">Shop by Category</h2>
+      <h2 className="text-3xl font-bold mb-4 flex justify-center text-black p-4 rounded-lg border-4 border-black shadow-md bg-custom-yellow">Shop by Category</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         {categories.map((category) => (
           <Link key={category.name} href={category.link}>

@@ -1,32 +1,27 @@
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 
 
-
-
-
-const Card  = () => {
-
-    return (
-      <div className="bg-white border-2 border-gray-800 shadow-md rounded-lg p-4 flex flex-col justify-start gap-4">
+const Card = ({ product }) => {
+  return (
+    <div className="bg-gray-200 border-4 border-black shadow-md rounded-lg p-4 flex flex-col justify-start gap-4">
       <div className="flex justify-center">
-       
-          <Image
-            className="w-8/12 h-20 object-cover rounded-t-lg border border-black"
-            layout="responsive"
-            width={6}
-            height={12}
-            src="/bestseller.jpg"
-            alt="mobilephone"
-          />
-      
+        <Image
+          className="object-cover rounded-t-lg border border-black"
+          layout="responsive"
+          width={100}
+          height={150}
+          src={product.image}
+          alt={product.name}
+        />
       </div>
-      <div className="text-xl font-semibold text-gray-800">Titel</div>
-      <div className="text-sm font-light text-gray-600">Desc</div>
+      <div className="text-xl font-semibold text-gray-800">{product.name}</div>
+      <div className="text-sm font-light text-gray-600">{product.description}</div>
       <hr className="border-t border-gray-800 my-2" />
       <div className="flex justify-between items-center">
         <div className="text-lg font-semibold text-gray-800">
-          <span className="text-gray-600">SEK</span> 1337
+          <span className="text-gray-600">SEK</span> {product.price}
         </div>
         <button className="flex items-center justify-center h-9 w-9 bg-white text-gray-800 border-2 border-gray-800 rounded hover:border-blue-500 hover:text-blue-500 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-6 h-6 fill-current">
@@ -38,7 +33,7 @@ const Card  = () => {
         </button>
       </div>
     </div>
-    );
-  };
-  
-  export default Card;
+  );
+};
+
+export default Card;

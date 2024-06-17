@@ -39,14 +39,14 @@ const Carousel = () => {
       <div className="rounded-lg border-4 border-black shadow-md bg-white">
      
      <img
-       className="w-full h-auto "
+       className="w-full h-auto border-b-4 border-black"
        src="/bestseller.jpg"
        alt="Slide 1"
      />
 
       <div className=''>
      <Link href="/shop">
-      <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köpa</h2>
+      <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köp</h2>
       </Link>
       </div>
 
@@ -56,14 +56,14 @@ const Carousel = () => {
       <div className="rounded-lg border-4 border-black shadow-md bg-white">
      
         <img
-          className="w-full h-auto "
+          className="w-full h-auto border-b-4 border-black"
           src="/bestseller.jpg"
           alt="Slide 1"
         />
  
          <div className=''>
         <Link href="/shop">
-         <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köpa</h2>
+         <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köp</h2>
          </Link>
          </div>
    
@@ -73,14 +73,14 @@ const Carousel = () => {
       <div className="rounded-lg border-4 border-black shadow-md bg-white">
      
         <img
-          className="w-full h-auto "
+          className="w-full h-auto border-b-4 border-black"
           src="/bestseller.jpg"
           alt="Slide 1"
         />
  
          <div className=''>
         <Link href="/shop">
-         <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köpa</h2>
+         <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köp</h2>
          </Link>
          </div>
    
@@ -90,14 +90,14 @@ const Carousel = () => {
       <div className="rounded-lg border-4 border-black shadow-md bg-white">
      
      <img
-       className="w-full h-auto "
+       className="w-full h-auto border-b-4 border-black"
        src="/bestseller.jpg"
        alt="Slide 1"
      />
 
       <div className=''>
      <Link href="/shop">
-      <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köpa</h2>
+      <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köp</h2>
       </Link>
       </div>
 
@@ -107,14 +107,14 @@ const Carousel = () => {
    <div className="rounded-lg border-4 border-black shadow-md bg-white">
      
      <img
-       className="w-full h-auto "
+       className="w-full h-auto border-b-4 border-black"
        src="/bestseller.jpg"
        alt="Slide 1"
      />
 
       <div className=''>
      <Link href="/shop">
-      <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köpa</h2>
+      <h2 className='p-2 text-center text-xl hover:bg-yellow-500'>Köp</h2>
       </Link>
       </div>
 

@@ -1,9 +1,13 @@
 import React from 'react';
 import Image from "next/image";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8 ">
+    <footer className="bg-gray-800 border-t-2 text-white py-8 ">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
         {/* Sektion 1: Kontakt */}
         <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
@@ -34,52 +38,24 @@ const Footer = () => {
       </div>
       <div className='flex justify-center items-center mt-10'>
       <div className="socials__section__inner flex justify-center items-center gap-2">
-              <div className="socials__box rounded-lg border-2 border-gray-700 shadow-md w-[80%] flex justify-center items-center p-2">
-                <a href="#" className="instagram text-blue-500">
-                  <Image
-                    className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                
-                    width={10}
-                    height={14}
-                    src="/instagram.png"
-                    alt="mobilephone"
-                  />
+              <div className="socials__box rounded-lg border-2 border-gray-700  shadow-md flex justify-center items-center p-1">
+                <a href="" className='text-white hover:text-yellow-600'>
+             <InstagramIcon/>
+             </a>
+              </div>
+              <div className="socials__box rounded-lg border-2 border-gray-700 shadow-md  flex justify-center items-center p-1">
+                <a href="" className='text-white hover:text-yellow-600'>
+              <FacebookIcon/>
+              </a>
+              </div>
+              <div className="socials__box rounded-lg border-2 border-gray-700 shadow-md  flex justify-center items-center p-1">
+                <a href="" className='text-white hover:text-yellow-600'>
+                <YouTubeIcon/>
                 </a>
               </div>
-              <div className="socials__box rounded-lg border-2 border-gray-700 shadow-md w-[80%] flex justify-center items-center p-2">
-                <a href="#" className="tiktok text-blue-500 hover:text-blue-600">
-                  <Image
-                    className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                 
-                    width={10}
-                    height={14}
-                    src="/tik-tok.png"
-                    alt="mobilephone"
-                  />
-                </a>
-              </div>
-              <div className="socials__box rounded-lg border-2 border-gray-700 shadow-md w-[80%] flex justify-center items-center p-2">
-                <a href="#" className="facebook text-blue-500 hover:text-blue-600">
-                  <Image
-                    className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                 
-                    width={10}
-                    height={14}
-                    src="/facebook.png"
-                    alt="mobilephone"
-                  />
-                </a>
-              </div>
-              <div className="socials__box rounded-lg border-2 border-gray-700 shadow-md w-[80%] flex justify-center items-center p-2">
-                <a href="#" className="youtube text-blue-500 hover:text-blue-600">
-                  <Image
-                    className="max-w-[2rem] max-h-[2rem] hover:translate-y-1"
-                
-                    width={10}
-                    height={14}
-                    src="/youtube.png"
-                    alt="mobilephone"
-                  />
+              <div className="socials__box rounded-lg border-2 border-gray-700 shadow-md flex justify-center items-center p-1">
+                <a href="#" className=" text-white hover:text-yellow-600 ">
+                 <GitHubIcon/>
                 </a>
               </div>
             </div>

@@ -12,7 +12,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 export default function Home() {
   return (
-    <main className="flex-col justify-center items-center bg-yellow-500">
+    <main className="flex-col justify-center items-center ">
 
 
       <div className="relative h-screen bg-cover bg-center " style={{ backgroundImage: 'url(/startimage.jpg)' }}>
@@ -22,7 +22,7 @@ export default function Home() {
           <p className="text-lg mb-8">Hatten av, Keps på</p>
           <Link href="/shop">
 
-            <button className="bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-300 text-black font-bold py-3 px-6 rounded-lg border-4  border-black shadow-md transform transition-transform duration-300 cursor-pointer">
+            <button className="bg-custom-yellow hover:bg-yellow-500 active:bg-yellow-300 text-black font-bold py-3 px-6 rounded-lg border-4 border-black shadow-md transform transition-transform duration-300 cursor-pointer">
               Shoppa Kepsar
             </button>
           </Link>
@@ -41,8 +41,8 @@ export default function Home() {
 
       <hr className="container mx-auto my-8" />
 
-      <div className="container mx-auto ">
-        <h1 className="text-3xl font-bold mb-4 flex justify-center text-black p-4 rounded-lg border-4 border-black shadow-md bg-white">BÄSTSÄLJARE</h1>
+      <div className="container mx-auto flex-col">
+        <h1 className="text-3xl font-bold mb-4 flex justify-center text-black p-4 rounded-lg border-4 border-black shadow-md bg-custom-yellow">BÄSTSÄLJARE</h1>
         <div className="text-center"><ArrowDownwardIcon className="rounded-lg border-4 border-black bg-white "/></div>
         <Carousel />
       </div>
@@ -60,7 +60,7 @@ export default function Home() {
 
 
       <div className="container mx-auto my-10">
-        <h1 className="text-3xl font-bold mb-4 flex justify-center text-black  py-3 px-6 rounded-lg border-4 border-black shadow-md ">Inspo</h1>
+        <h1 className="text-3xl font-bold mb-4 flex justify-center text-black p-4 rounded-lg border-4 border-black shadow-md bg-custom-yellow ">Inspo</h1>
 
         <div className=" flex flex-col lg:flex-row gap-4 ">
           <div className="lg:w-2/4 flex flex-col gap-4">
